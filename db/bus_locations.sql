@@ -1,0 +1,22 @@
+--------------------------------------------------------
+--  File created - Sunday-July-30-2017   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table BUS_LOCATIONS
+--------------------------------------------------------
+
+  CREATE TABLE "C##NXTBDY"."BUS_LOCATIONS" 
+   (	"ROUTE_ID" VARCHAR2(50 BYTE), 
+	"DIRECTION" VARCHAR2(50 BYTE), 
+	"LATITUDE" NUMBER, 
+	"LONGITUDE" NUMBER, 
+	"GEOM" "SDO_GEOMETRY", 
+	"VEHICLE_ID" VARCHAR2(50 BYTE), 
+	"SUBURB" VARCHAR2(50 BYTE)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
+ NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
+  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
